@@ -27,7 +27,7 @@ from . pcal_op_camviews import PCAL_OT_look360cam
 
 
 bl_info = {
-    "name": "PanoCamAdder-Light",
+    "name": "pcalight",
     "author": "DerMische",
     "version": (1, 0, 0),
     "blender": (4, 3, 0),
