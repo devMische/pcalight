@@ -27,7 +27,7 @@ from . pcal_op_camviews import PCAL_OT_look360cam
 
 
 bl_info = {
-    "name": "pcalight",
+    "name": "PanoCamAdder Light",
     "author": "DerMische",
     "version": (1, 0, 0),
     "blender": (4, 3, 0),
@@ -110,4 +110,13 @@ classes = (PCALsettings,
            PCALPreferences)
 
 
-register, unregister = bpy.utils.register_classes_factory(classes)
+def register():
+    addon_updater_ops.register(bl_info)
+    for cls in classes:
+        bpy.utils.register_class(cls)
+
+
+def unregister():
+    addon_updater_ops.unregister()
+    for cls in classes:
+        bpy.utils.unregister_class(cls)
