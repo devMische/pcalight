@@ -21,7 +21,7 @@ import bpy
 
 
 class PCAL_PT_main(bpy.types.Panel):
-    bl_label = "PCA light 1.1"
+    bl_label = "PCA light"
     bl_idname = "PCAL_PT_Main"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
