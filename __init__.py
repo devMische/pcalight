@@ -29,7 +29,7 @@ from . pcal_op_camviews import PCAL_OT_look360cam
 bl_info = {
     "name": "PanoCamAdder Light",
     "author": "DerMische",
-    "version": (1, 2, 0),
+    "version": (1, 2, 1),
     "blender": (4, 3, 0),
     "location": "View3D > UI > PCA light",
     "description": "Free version of the PanoCamAdder",

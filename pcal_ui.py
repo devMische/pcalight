@@ -21,7 +21,7 @@ import bpy
 
 
 class PCAL_PT_main(bpy.types.Panel):
-    bl_label = "PCA light 1.2"
+    bl_label = "PCA light 1.2.1"
     bl_idname = "PCAL_PT_Main"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
@@ -61,4 +61,5 @@ class PCAL_PT_camera(bpy.types.Panel):
         layout = self.layout
         col = layout.column()
         col.prop(scene, "camera", text="")
+        col.prop(scene, "cb_matworld", text='Assign PanoMAT')
         col.operator("pcal.cam360", icon='CHECKBOX_HLT', text="OK")
